@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="QuestionBean" class="com.pojo.Question"  name="question">  
+     <property name="questionId" value="1"></property>
+     <property name="question" value="who is your favourate hero"></property>
+      <property name="answers">
+      <list>
+        <value>megastar</value>
+         <value>powerstar</value>
+        
+      </list>
+      </property>
+       <property name="answersSet">
+      <list>
+        <value>megastar</value>
+         <value>megastar</value>
+         <value>powerstar</value>
+          <value>megapowerstar</value>
+        
+      </list>
+      
+      </property>
+      
+      <property name="answersMap">
+      <map>
+       <entry key="1"><value>megastar</value></entry>
+       <entry key="2"><value>powerstar</value></entry>
+       <entry key="3"><value>stylishstar</value></entry>
+      
+      </map>
+      
+      </property>
+     
+</bean> 
+</beans>  
